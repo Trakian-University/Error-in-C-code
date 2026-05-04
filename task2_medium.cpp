@@ -1,39 +1,34 @@
+/* Задача 2 — Начално към средно ниво
+Тема: Проверка на оценка
+Условие
+
+Даден е код, който трябва да въведе оценка от 2 до 6 и да изведе текстова характеристика:
+
+ако оценката е 6 — „Excellent“;
+ако е 5 или 4 — „Good“;
+ако е 3 — „Satisfactory“;
+ако е 2 — „Poor“;
+при друга стойност — „Invalid grade“.*/
+
 #include <iostream>
 using namespace std;
 
-char getGrade(int score) {
-    if (score >= 90) {
-        return 'A';
-    } else if (score >= 80) {
-        return 'B';
-    } else if (score >= 70) {
-        return 'C';
-    } else if (score >= 50) {
-        return 'D';
-    } else {
-        return 'F';
-    }
-}
-
 int main() {
-    int score;
-    cout << "Въведете точки: ";
-    cin >> score;
+    int grade
 
-    if (score < 0 || score > 100) {
-        cout << "Невалидни точки!" << endl;
-        return 1;
-    }
+    cout << "Enter grade: ";
+    cin >> grade;
 
-    char grade = getGrade(score);
-
-    if (grade == "A") {
-        cout << "Отличен!" << endl;
-    } else if (grade == 'F') {
-        cout << "Слаб" << endl;
-    } else {
-        cout << "Оценка: " << grade << endl;
-    }
+    if (grade = 6) {
+        cout << "Excellent" << endl;
+    } else if (grade == 5 || grade == ) {
+        cout << "Good" << endl;
+    } else if grade == 3 {
+        cout << "Satisfactory" << endl;
+    } else if (grade == 2) {
+        cout << "Poor" << endl;
+    } else
+        cout << "Invalid grade" << endl;
 
     return 0;
 }
